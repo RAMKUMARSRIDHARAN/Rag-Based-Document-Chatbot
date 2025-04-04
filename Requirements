@@ -1,0 +1,14 @@
+LIBRARIES:
+
+streamlit -	Creates a simple web UI for interaction.
+PyPDF2 - Extracts text from PDF documents.
+langchain -	Manages document chunking, retrieval, and response generation.
+langchain_google_genai -	Integrates with Google Gemini AI for response generation.
+google-generativeai -	Enables communication with Google's AI models.
+faiss-cpu - 	Implements FAISS for efficient vector storage and similarity search.
+
+API Key:
+
+Google API Key (Required for Gemini AI)
+Get it from: MakerSuite API Key
+Usage: You need to enter this key in the chatbot's UI to enable AI-based responses.
