@@ -1,6 +1,7 @@
 # Rag-Based-Document-Chatbot
 
-\*1. Source Code Documentation\*
+**1. Source Code Documentation**
+
 Overview: 
 This chatbot implements a Retrieval-Augmented Generation (RAG) framework using Google's Gemini-1.5-Pro model. It allows users to upload PDFs, extracts text, converts it into vector embeddings, and retrieves contextually relevant information to answer user queries.
 
