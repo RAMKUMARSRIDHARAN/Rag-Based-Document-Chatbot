@@ -21,7 +21,7 @@ iii) Query Processing & Response Generation
 iv) Streamlit UI
   o	Provides an interactive interface for users to upload PDFs and ask questions.
 
-2. Instructions for Running the Chatbot
+**2. Instructions for Running the Chatbot**
 
 Step 1: Install Required Libraries
     Run the following command in your terminal:
@@ -40,7 +40,7 @@ Step 4: Interact with the Chatbot
   3.	Click "Submit & Process" to generate the knowledge base.
   4.	Ask questions, and the chatbot will return relevant answers.
 
-3. Tech Stack Choices
+**3. Tech Stack Choices**
 🔹 Programming Language
     •	Python – Ideal for AI-based applications due to its rich ecosystem of ML and NLP libraries.
 🔹 Frontend & UI
@@ -53,14 +53,14 @@ Step 4: Interact with the Chatbot
 🔹 Vector Storage & Retrieval
     •	FAISS (langchain.vectorstores.FAISS) – Stores and retrieves document embeddings efficiently.
 
-4. Response Structuring Approach
+**4. Response Structuring Approach**
   The chatbot retrieves relevant content before passing it to Gemini-1.5-Pro for answer generation. The response structure ensures:
     1.	Context-Aware Answers: Uses a prompt to ensure responses stick to the document and avoid hallucinations.
     2.	Structured Output:
           o	If answer is found: The model provides a well-structured, concise response.
           o If no answer is found: It explicitly states: "Answer is not available in the context" instead of generating false information.
 
-Prompt Template Used
+**Prompt Template Used**
 
 Prompt_template = """
     Answer the question as detailed as possible from the provided context, make sure to provide all the details. 
@@ -71,7 +71,7 @@ Prompt_template = """
     Answer:
 """
 
-5. Challenges Faced & Solutions Implemented
+**5. Challenges Faced & Solutions Implemented**
    
 🔸 Challenge 1: Google API Model Not Found (404 Error)
       •	Problem: "models/gemini-pro is not found for API version v1beta".
