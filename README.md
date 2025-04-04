@@ -38,8 +38,9 @@ Prompt_template = """
 """
 
 **Response Structuring Approach**
+
   The chatbot retrieves relevant content before passing it to Gemini-1.5-Pro for answer generation. The response structure ensures:
-    1.	Context-Aware Answers: Uses a prompt to ensure responses stick to the document and avoid hallucinations.
-    2.	Structured Output:
+     *	Context-Aware Answers: Uses a prompt to ensure responses stick to the document and avoid hallucinations.
+     * 	Structured Output:
           o	If answer is found: The model provides a well-structured, concise response.
           o If no answer is found: It explicitly states: "Answer is not available in the context" instead of generating false information.
